@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 const url =
-  "mongodb+srv://nauyanika1206:nauyanika1206@cluster0.nczkm.mongodb.net/blogDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://username:password@cluster0.nczkm.mongodb.net/blogDatabase?retryWrites=true&w=majority";
 mongoose
   .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
